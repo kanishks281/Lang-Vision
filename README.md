@@ -76,18 +76,3 @@ lang-vision/
 - Langdetect
 - Googletrans
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-Feel free to fork the repository, make changes, and submit a pull request. If you have suggestions or issues, please open an issue in the repository.
-
-## Contact
-
-For any questions or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
-
----
-
-Feel free to customize it further based on your specific needs or preferences!
