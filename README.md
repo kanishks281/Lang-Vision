@@ -1,26 +1,93 @@
-# Building-Machine-Translation-App-Language-Translation-using-machine-leanring-nlp
+# Lang Vision
 
+**Lang Vision** is a web application for language detection and translation. It allows users to input text, select a target language, and get translations using a user-friendly interface. Built with Flask, it integrates with language detection and translation services to provide accurate results.
 
-Language Translation
-Language translation is the process of converting text or speech from one language to another while preserving its meaning and context. This involves using linguistic and computational techniques to interpret the source language and generate the equivalent content in the target language. Modern translation methods often employ machine learning models and neural networks for accuracy and fluency.
+## Features
 
-We have two problems
-First Problem: Language Detection
-The first problem is to know how you can detect language for particular data. In this case, you can use a simple python package called langdetect.
+- **Language Detection:** Automatically detects the language of the input text.
+- **Text Translation:** Translates the detected text into the selected target language.
+- **User-Friendly Interface:** Simple and intuitive web interface built with Bootstrap.
+- **Support for Multiple Languages:** Provides translation options for a wide range of languages.
 
-supports 55 languages
+## Technologies
 
-af, ar, bg, bn, ca, cs, cy, da, de, el, en, es, et, fa, fi, fr, gu, he, hi, hr, hu, id, it, ja, kn, ko, lt, lv, mk, ml, mr, ne, nl, no, pa, pl, pt, ro, ru, sk, sl, so, sq, sv, sw, ta, te, th, tl, tr, uk, ur, vi, zh-cn, zh-tw
+- **Flask:** Web framework for building the application.
+- **Bootstrap:** Frontend framework for styling the application.
+- **Langdetect:** Library for detecting the language of the input text.
+- **Google Translate API:** Service for translating text into different languages.
 
-pip install langdetect
+## Installation
 
-Second Problem: Language Translation
-The second problem you need to solve is to translate a text from one language to the language of your choice. In this case, you will use another useful python package called google_trans_new.
+1. **Clone the Repository:**
 
-google_trans_new is a free and unlimited python package that implemented Google Translate API and It also performs auto language detection.
+    ```bash
+    git clone https://github.com/yourusername/lang-vision.git
+    cd lang-vision
+    ```
 
-Install google_trans_new
+2. **Create and Activate a Virtual Environment:**
 
-but it has some issues so we will use alternatives....
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use: venv\Scripts\activate
+    ```
 
-pip install googletrans==4.0.0-rc1
+3. **Install Dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Run the Application:**
+
+    ```bash
+    python app.py
+    ```
+
+5. **Open Your Browser:**
+
+    Navigate to `http://127.0.0.1:5000` to access the application.
+
+## Usage
+
+1. **Enter Text:** Type the text you want to detect and translate into the provided text area.
+2. **Select Target Language:** Choose the target language for translation from the dropdown menu.
+3. **Submit Form:** Click the "Translate" button to get the detected language and translated text.
+
+## Project Structure
+
+```
+lang-vision/
+│
+├── app.py                # Flask application code
+├── templates/
+│   └── index.html         # HTML template for the user interface
+├── static/
+│   └── style.css          # Custom styles (if any)
+├── requirements.txt      # Python package dependencies
+└── README.md             # Project documentation
+```
+
+## Requirements
+
+- Python 3.x
+- Flask
+- Bootstrap (for frontend styling)
+- Langdetect
+- Googletrans
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Feel free to fork the repository, make changes, and submit a pull request. If you have suggestions or issues, please open an issue in the repository.
+
+## Contact
+
+For any questions or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
+
+---
+
+Feel free to customize it further based on your specific needs or preferences!
